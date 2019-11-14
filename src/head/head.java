@@ -1,12 +1,12 @@
 package head;
 
-import generator.BaseSecondary;
+import generator.Base;
 import generator.Position;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 
-public class head extends BaseSecondary{
+public class head extends Base{
 	
 	/**
 	 * 
