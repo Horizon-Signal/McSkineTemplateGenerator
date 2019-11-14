@@ -1,12 +1,12 @@
 package body;
 
-import generator.BaseSecondary;
+import generator.Base;
 import generator.Position;
 
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 
-public class clothes extends BaseSecondary{
+public class clothes extends Base{
 	
 	
 	static final Position leftTop = new Position (16, 32);

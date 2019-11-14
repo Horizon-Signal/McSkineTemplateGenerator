@@ -3,10 +3,10 @@ package body;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 
-import generator.BaseSecondary;
+import generator.Base;
 import generator.Position;
 
-public class body extends BaseSecondary{
+public class body extends Base{
 	
 	static final Position leftTop = new Position (23, 20);
 	static final Position rightBottom = new Position (25, 28);
