@@ -15,7 +15,7 @@ import java.io.IOException;
 
 import com.sun.xml.internal.bind.api.impl.NameConverter.Standard;
 
-public class Base extends Standard{
+public class Base extends BaseSecondary{
 	
 	protected HashMap<Position, Color> storage;
 	
@@ -27,19 +27,10 @@ public class Base extends Standard{
 	}
 	
 
-	
-	/**
-	 * 
-	 * @return whether the map object is empty or not
-	 */
 	public boolean isEmpty() {
 		return this.storage.isEmpty();
 	}
 	
-	/**
-	 * the size of the map object
-	 * @return |storage|
-	 */
 	public int size() {
 		return this.storage.size();
 	}
@@ -54,18 +45,10 @@ public class Base extends Standard{
 		
 		return (this.storage.size() > 4000);
 	}
+	/////////////////////////////////////////////////////////////
+
 	
-	/**
-	 * 
-	 * @param color the RGB color you want to set
-	 */
-	public void setBottomColor (Color color) {
-		
-		for (Entry<Position, Color> entry : this.storage.entrySet()) {
-			// for all elements in this map object
-			this.storage.put(entry.getKey(), color);
-		}
-	}
+	/////////////////////////////////////////////////////////////
 	
 	/**
 	 * 
@@ -140,7 +123,7 @@ public class Base extends Standard{
     /**
      * 
      * @param arr the key you are looking for
-     * @return 
+     * @return whether this contains arr
      */
     public boolean contains (Position arr) {
     	return this.storage.containsKey(arr);

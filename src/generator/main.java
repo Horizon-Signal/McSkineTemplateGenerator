@@ -29,6 +29,11 @@ public class main {
 
 	public static void main(String[] args) {
 		
+		
+		Position a = new Position(1, 1);
+		Position b = new Position(1, 1);
+		System.out.println(a.equals(b));
+		
 
 		
 		
@@ -43,7 +48,7 @@ public class main {
 			Color [] ex = new Color[2];
 			ex[0] = new Color(255, 229, 211);
 			ex[1] = BaseSecondary.transparent;
-			BufferedImage headZoneTemplate = ImageIO.read(new File("E:\\Game\\McSkin3D\\mcskin3d_1_6_0_603\\Skins\\programTest\\t.png"));
+			BufferedImage headZoneTemplate = ImageIO.read(new File("data/t.png"));
 			
 			
 			

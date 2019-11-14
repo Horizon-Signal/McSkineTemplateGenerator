@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Map.Entry;
 
-public class BaseSecondary extends Base{
+public abstract class BaseSecondary implements Base1{
 	
 	static final Color skinColor = new Color(255, 227, 207);
 	static final Color transparent = new Color(0, 0, 0, 0);
@@ -132,6 +132,16 @@ public class BaseSecondary extends Base{
 			}
 		}
     }
-    
+	/**
+	 * 
+	 * @param color the RGB color you want to set
+	 */
+	public void setBottomColor (Color color) {
+		
+		for (Entry<Position, Color> entry : this.entrySet()) {
+			// for all elements in this map object
+			this.setPixelColor(entry.getKey(), color);
+		}
+	}
 
 }
